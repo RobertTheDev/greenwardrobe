@@ -1,4 +1,5 @@
 import type { MetaFunction } from '@remix-run/node';
+import { useSearchParams } from '@remix-run/react';
 
 export const meta: MetaFunction = () => {
   return [
@@ -8,9 +9,11 @@ export const meta: MetaFunction = () => {
 };
 
 export default function SearchPage() {
+  const [searchParams] = useSearchParams();
+
   return (
     <div>
-      <h1>Search</h1>
+      <h1>Search {searchParams.get('q')}</h1>
     </div>
   );
 }
