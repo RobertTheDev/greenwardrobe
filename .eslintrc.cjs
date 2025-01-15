@@ -19,8 +19,14 @@ module.exports = {
     commonjs: true,
     es6: true,
   },
-  ignorePatterns: ['!**/.server', '!**/.client'],
-
+  ignorePatterns: [
+    '!**/.server',
+    '!**/.client',
+    'node_modules',
+    '/.cache',
+    '/build',
+    '.env',
+  ],
   // Base config
   extends: ['eslint:recommended'],
 
@@ -28,7 +34,7 @@ module.exports = {
     // React
     {
       files: ['**/*.{js,jsx,ts,tsx}'],
-      plugins: ['react', 'jsx-a11y'],
+      plugins: ['react', 'jsx-a11y', 'vitest'],
       extends: [
         'plugin:react/recommended',
         'plugin:react/jsx-runtime',
