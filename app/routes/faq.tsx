@@ -1,4 +1,5 @@
 import { MetaFunction } from '@remix-run/react';
+import FaqSection from '~/components/FaqSection';
 import {
   generateMetaDescription,
   generateMetaTitle,
@@ -17,7 +18,8 @@ export const meta: MetaFunction = () => {
 export default function FaqPage() {
   return (
     <div>
-      <h1>Faq</h1>
+      <h1>Frequently Asked Questions</h1>
+      <FaqSection />
     </div>
   );
 }
