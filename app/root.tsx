@@ -7,8 +7,7 @@ import {
   ScrollRestoration,
 } from '@remix-run/react';
 
-import Header from './components/Header';
-import './tailwind.css';
+import './styles/tailwind.css';
 
 export const links: LinksFunction = () => [
   { rel: 'preconnect', href: 'https://fonts.googleapis.com' },
@@ -34,7 +33,6 @@ export function Layout({ children }: { children: React.ReactNode }) {
       </head>
       <body>
         <div className="flex min-h-screen flex-col">
-          <Header />
           <div className="flex-1">{children}</div>
         </div>
         <ScrollRestoration />
