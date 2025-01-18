@@ -7,6 +7,9 @@ import {
   ScrollRestoration,
 } from '@remix-run/react';
 
+import AnnouncementBar from './layout/AnnouncementBar';
+import Footer from './layout/Footer';
+import Header from './layout/Header';
 import './styles/tailwind.css';
 
 export const links: LinksFunction = () => [
@@ -33,7 +36,10 @@ export function Layout({ children }: { children: React.ReactNode }) {
       </head>
       <body>
         <div className="flex min-h-screen flex-col">
+          <AnnouncementBar />
+          <Header />
           <div className="flex-1">{children}</div>
+          <Footer />
         </div>
         <ScrollRestoration />
         <Scripts />
