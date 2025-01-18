@@ -3,19 +3,19 @@ import { FaGithub, FaLinkedin } from 'react-icons/fa6';
 
 const footerNavigationLinks = [
   {
-    title: 'Browse',
+    title: 'Shop',
     links: [
       {
-        title: 'Shop',
-        url: '/',
+        title: 'About',
+        url: '/about',
       },
       {
         title: 'Collections',
         url: '/collections',
       },
       {
-        title: 'Search',
-        url: '/search',
+        title: 'Home',
+        url: '/',
       },
     ],
   },
