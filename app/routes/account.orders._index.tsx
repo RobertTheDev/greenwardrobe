@@ -1,4 +1,4 @@
-import { MetaFunction } from '@remix-run/react';
+import { Link, MetaFunction } from '@remix-run/react';
 import {
   generateMetaDescription,
   generateMetaTitle,
@@ -18,6 +18,7 @@ export default function AccountOrdersPage() {
   return (
     <div>
       <h1>Account Orders</h1>
+      <Link to="/account/orders/1">Order 1</Link>
     </div>
   );
 }
