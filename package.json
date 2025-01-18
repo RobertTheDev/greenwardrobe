@@ -7,7 +7,7 @@
     "build": "remix vite:build",
     "dev": "remix vite:dev",
     "format": "prettier . --write && prettier . --check",
-    "lint": "eslint",
+    "lint": "eslint .",
     "start": "remix-serve ./build/server/index.js",
     "typecheck": "tsc",
     "prepare": "husky install",
