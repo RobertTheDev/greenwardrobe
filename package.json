@@ -8,6 +8,7 @@
     "dev": "remix vite:dev",
     "format": "prettier . --write && prettier . --check",
     "lint": "eslint .",
+    "lint:fix": "eslint . --fix",
     "start": "remix-serve ./build/server/index.js",
     "typecheck": "tsc",
     "prepare": "husky install",
