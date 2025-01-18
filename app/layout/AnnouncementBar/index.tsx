@@ -6,7 +6,8 @@ export default function AnnouncementBar() {
         <a
           href="https://www.roberthawker.dev"
           target="_blank"
-          className="font-semibold underline" rel="noreferrer"
+          className="font-semibold underline"
+          rel="noreferrer"
         >
           Robert Hawker
         </a>
