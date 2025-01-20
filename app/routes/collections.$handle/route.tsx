@@ -1,10 +1,10 @@
 import { MetaFunction } from '@remix-run/react';
-import ProductCard from '~/components/ProductCard';
 import products from '~/data/products';
 import {
   generateMetaDescription,
   generateMetaTitle,
 } from '~/utils/generateMetaHandlers';
+import ProductCard from './ProductCard';
 
 export const meta: MetaFunction = () => {
   return [

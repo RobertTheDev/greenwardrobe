@@ -1,6 +1,6 @@
 import { Link } from '@remix-run/react';
 import collections from '~/data/collections';
-import ProductCard from '../../../components/ProductCard';
+import ProductCard from './ProductCard';
 
 export default function HomeFeaturedSection({
   collectionSlug,
