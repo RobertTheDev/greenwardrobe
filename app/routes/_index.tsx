@@ -1,10 +1,10 @@
 import { MetaFunction } from '@remix-run/react';
+import HomeAboutSection from '~/components/HomeAboutSection';
 import HomeBlogSection from '~/components/HomeBlogSection';
 import HomeCollectionsSection from '~/components/HomeCollectionsSection';
 import HomeFeaturedSection from '~/components/HomeFeaturedSection';
 import HomeFeaturesSection from '~/components/HomeFeaturesSection';
 import HomeHeroSection from '~/components/HomeHeroSection';
-import HomeTestimonialsSection from '~/components/HomeTestimonialsSection';
 import {
   generateMetaDescription,
   generateMetaTitle,
@@ -26,12 +26,12 @@ export default function Home() {
       <HomeHeroSection />
       <HomeFeaturesSection />
       <HomeCollectionsSection />
-      <HomeFeaturedSection />
-      <HomeFeaturedSection />
-      <HomeFeaturedSection />
-      <HomeFeaturedSection />
+      <HomeFeaturedSection collectionSlug="men" />
+      <HomeFeaturedSection collectionSlug="women" />
+      <HomeAboutSection />
+      <HomeFeaturedSection collectionSlug="kids" />
+      <HomeFeaturedSection collectionSlug="toddler" />
       <HomeBlogSection />
-      <HomeTestimonialsSection />
     </main>
   );
 }
