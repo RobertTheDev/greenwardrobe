@@ -1,4 +1,5 @@
-import { MetaFunction } from '@remix-run/react';
+import { MetaFunction, useParams } from '@remix-run/react';
+import products from '~/data/products';
 import {
   generateMetaDescription,
   generateMetaTitle,
@@ -7,7 +8,6 @@ import ProductImages from './ProductImages';
 import ProductInformation from './ProductInformation';
 import ProductOptions from './ProductOptions';
 import ProductTitleAndPrice from './ProductTitleAndPrice';
-import product from './product';
 
 export const meta: MetaFunction = () => {
   return [
@@ -20,6 +20,20 @@ export const meta: MetaFunction = () => {
 };
 
 export default function ProductPage() {
+  const { handle } = useParams();
+
+  const product = products.find((p) => p.slug === handle);
+
+  if (!product) {
+    return (
+      <div className="p-4 font-[sans-serif]">
+        <div className="w-full">
+          <h1 className="text-center">Product not found</h1>
+        </div>
+      </div>
+    );
+  }
+
   return (
     <div className="p-4 font-[sans-serif]">
       <div className="w-full">
