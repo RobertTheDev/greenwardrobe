@@ -1,5 +1,4 @@
 import { MetaFunction } from '@remix-run/react';
-import { useRef, useState } from 'react';
 import {
   generateMetaDescription,
   generateMetaTitle,
@@ -15,131 +14,112 @@ export const meta: MetaFunction = () => {
   ];
 };
 
-interface FaqProps {
-  q: string;
-  a: string;
-}
-
-interface FaqsCardProps {
-  faqsList: FaqProps;
-  idx: number;
-}
-
-const FaqsCard = ({ faqsList, idx }: FaqsCardProps) => {
-  const answerElRef = useRef<HTMLDivElement | null>(null);
-  const [state, setState] = useState(false);
-  const [answerH, setAnswerH] = useState('0px');
-
-  const handleOpenAnswer = () => {
-    if (answerElRef.current) {
-      const answerElH = answerElRef.current.childNodes[0] as HTMLElement;
-      const height = answerElH.offsetHeight;
-      setState(!state);
-      setAnswerH(`${height + 20}px`);
-    }
-  };
-
-  const handleKeyDown = (event: React.KeyboardEvent) => {
-    if (event.key === 'Enter' || event.key === ' ') {
-      handleOpenAnswer();
-    }
-  };
-
-  return (
-    <div
-      className="mt-5 space-y-3 overflow-hidden border-b"
-      key={idx}
-      role="button"
-      tabIndex={0}
-      onClick={handleOpenAnswer}
-      onKeyDown={handleKeyDown}
-    >
-      <h4 className="flex cursor-pointer items-center justify-between pb-5 text-lg font-medium text-gray-700">
-        {faqsList.q}
-        {state ? (
-          <svg
-            xmlns="http://www.w3.org/2000/svg"
-            className="ml-2 h-5 w-5 text-gray-500"
-            fill="none"
-            viewBox="0 0 24 24"
-            stroke="currentColor"
-          >
-            <path
-              strokeLinecap="round"
-              strokeLinejoin="round"
-              strokeWidth="2"
-              d="M20 12H4"
-            />
-          </svg>
-        ) : (
-          <svg
-            xmlns="http://www.w3.org/2000/svg"
-            className="ml-2 h-5 w-5 text-gray-500"
-            fill="none"
-            viewBox="0 0 24 24"
-            stroke="currentColor"
-          >
-            <path
-              strokeLinecap="round"
-              strokeLinejoin="round"
-              strokeWidth={2}
-              d="M12 4v16m8-8H4"
-            />
-          </svg>
-        )}
-      </h4>
-      <div
-        ref={answerElRef}
-        className="duration-300"
-        style={state ? { height: answerH } : { height: '0px' }}
-      >
-        <div>
-          <p className="text-gray-500">{faqsList.a}</p>
-        </div>
-      </div>
-    </div>
-  );
-};
-
 export default function FaqComponent() {
   const faqsList = [
     {
+      id: '1',
       q: 'What are some random questions to ask?',
       a: "That's exactly the reason we created this random question generator. There are hundreds of random questions to choose from so you're able to find the perfect random question.",
     },
     {
+      id: '2',
       q: 'Do you include common questions?',
       a: "This generator doesn't include most common questions. The thought is that you can come up with common questions on your own so most of the questions in this generator.",
     },
     {
+      id: '3',
       q: 'Can I use this for 21 questions?',
       a: "Yes! there are two ways that you can use this question generator depending on what you're after. You can indicate that you want 21 questions generated.",
     },
     {
+      id: '4',
       q: 'Are these questions for girls or for boys?',
       a: 'The questions in this generator are gender neutral and can be used to ask either male of females (or any other gender the person identifies with).',
     },
     {
+      id: '5',
       q: 'What do you wish you had more talent doing?',
       a: "If you've been searching for a way to get random questions, you've landed on the correct webpage. We created the Random Question Generator to ask you as many random questions as your heart desires.",
     },
   ];
 
   return (
-    <section className="mx-auto mt-12 max-w-screen-xl px-4 leading-relaxed md:px-8">
-      <div className="space-y-3 text-center">
-        <h1 className="text-3xl font-semibold text-gray-800">
-          Frequently Asked Questions
-        </h1>
-        <p className="mx-auto max-w-lg text-lg text-gray-600">
-          Answered all frequently asked questions, Still confused? feel free to
-          contact us.
-        </p>
-      </div>
-      <div className="mx-auto mt-14 max-w-2xl">
-        {faqsList.map((item, idx) => (
-          <FaqsCard key={item.q} idx={idx} faqsList={item} />
-        ))}
+    <section className="py-24">
+      <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
+        <div className="flex flex-col justify-center gap-12 lg:flex-row lg:justify-between xl:gap-24">
+          <div className="w-full lg:w-2/5">
+            <div className="mb-16">
+              <h6 className="mb-1 text-center text-base font-medium uppercase text-indigo-600 lg:text-left">
+                MOST ASKED QUESTIONS
+              </h6>
+              <h2 className="mb-4 text-center text-4xl font-bold leading-[3.25rem] text-gray-900 lg:text-left">
+                FAQs
+              </h2>
+              <p className="mb-7 text-center text-gray-500 lg:text-left">
+                Trusted In More Than 100 Countries And 5 Million Customers.
+                Transact Easily And Quickly With Just One Click.
+              </p>
+              <img
+                src="https://pagedone.io/asset/uploads/1696231386.png"
+                alt="Faq tailwind section"
+                className="mx-auto rounded-2xl object-cover lg:mx-0"
+              />
+            </div>
+          </div>
+          <div className="w-full lg:w-3/5">
+            <div className="accordion-group" data-accordion="default-accordion">
+              {faqsList.map((faq) => (
+                <div
+                  key={faq.id}
+                  className="accordion accordion-active:bg-indigo-50 accordion-active:border-indigo-600 mb-8 rounded-xl border border-solid border-gray-300 p-4 lg:p-4"
+                  id="basic-heading-six-with-icon"
+                >
+                  <button
+                    className="accordion-toggle accordion-active:font-medium accordion-active:text-indigo-600 group inline-flex w-full items-center justify-between text-left text-base font-normal leading-8 text-gray-900 transition duration-500 hover:text-indigo-600"
+                    aria-controls="basic-collapse-six-with-icon"
+                  >
+                    <h5>{faq.q}</h5>
+                    <svg
+                      className="accordion-active:text-indigo-600 accordion-active:hidden block h-6 w-6 text-gray-900 transition duration-500 group-hover:text-indigo-600"
+                      viewBox="0 0 24 24"
+                      fill="none"
+                      xmlns="http://www.w3.org/2000/svg"
+                    >
+                      <path
+                        d="M6 12H18M12 18V6"
+                        stroke="currentColor"
+                        strokeWidth="1.6"
+                        strokeLinecap="round"
+                        strokeLinejoin="round"
+                      ></path>
+                    </svg>
+                    <svg
+                      className="accordion-active:text-indigo-600 accordion-active:block hidden h-6 w-6 text-gray-900 transition duration-500 group-hover:text-indigo-600"
+                      viewBox="0 0 24 24"
+                      fill="none"
+                      xmlns="http://www.w3.org/2000/svg"
+                    >
+                      <path
+                        d="M6 12H18"
+                        stroke="currentColor"
+                        strokeWidth="1.6"
+                        strokeLinecap="round"
+                        strokeLinejoin="round"
+                      ></path>
+                    </svg>
+                  </button>
+                  <div
+                    id="basic-collapse-six-with-icon"
+                    className="accordion-content w-full overflow-hidden pr-4"
+                    aria-labelledby="basic-heading-six"
+                  >
+                    <p className="text-base leading-6 text-gray-900">{faq.a}</p>
+                  </div>
+                </div>
+              ))}
+            </div>
+          </div>
+        </div>
       </div>
     </section>
   );
