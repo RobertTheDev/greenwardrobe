@@ -6,8 +6,8 @@ export default function Header() {
   const signedIn = true;
 
   return (
-    <header className="sticky top-0 z-[99] flex min-h-16 border-b bg-white px-4 py-3 font-[sans-serif] tracking-wide sm:px-6">
-      <div className="mx-auto flex w-full max-w-screen-xl">
+    <header className="sticky top-0 z-[99] flex border-b bg-white py-4 font-[sans-serif] tracking-wide">
+      <div className="mx-auto flex w-full max-w-7xl">
         <div className="flex w-full flex-wrap items-center gap-4 lg:gap-y-2">
           <Link to="/">
             <img
@@ -44,7 +44,7 @@ export default function Header() {
             <form
               method="get"
               action="/search"
-              className="flex max-w-52 overflow-hidden rounded-full border border-black bg-gray-50 px-4 py-2.5 focus-within:border-gray-400 focus-within:bg-transparent max-lg:hidden"
+              className="flex min-w-64 max-w-96 overflow-hidden rounded-md bg-neutral-100 px-4 py-2.5 focus-within:border-gray-400 focus-within:bg-transparent max-lg:hidden"
             >
               <input
                 type="text"
@@ -56,7 +56,7 @@ export default function Header() {
                 <LuSearch size={20} />
               </button>
             </form>
-            <div className="flex items-center space-x-6 sm:space-x-8">
+            <div className="flex items-center space-x-4 sm:space-x-6">
               <button id="toggleOpen" className="lg:hidden">
                 <LuSearch size={28} />
               </button>
