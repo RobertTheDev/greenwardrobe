@@ -3,6 +3,7 @@ import {
   generateMetaDescription,
   generateMetaTitle,
 } from '~/utils/generateMetaHandlers';
+import AccountSettingsForm from './AccountSettingsForm';
 
 export const meta: MetaFunction = () => {
   return [
@@ -18,6 +19,7 @@ export default function AccountSettingsPage() {
   return (
     <div>
       <h1>Account Settings</h1>
+      <AccountSettingsForm />
     </div>
   );
 }
