@@ -42,6 +42,9 @@ module.exports = {
         'plugin:jsx-a11y/recommended',
         'prettier',
       ],
+      rules: {
+        'react/prop-types': 'off',
+      },
       settings: {
         react: {
           version: 'detect',
