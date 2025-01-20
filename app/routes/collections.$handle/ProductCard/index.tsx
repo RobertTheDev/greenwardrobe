@@ -7,7 +7,7 @@ export default function ProductCard({ product }: { product: IProduct }) {
       <div className="box group mx-auto w-full max-w-[280px] sm:mr-0">
         <div className="img-box flex h-auto w-full flex-col items-center justify-end overflow-hidden rounded-3xl">
           <img
-            src={product.image}
+            src={product.images[0].src}
             alt=""
             className="h-full w-full rounded-2xl object-cover transition-all duration-700 group-hover:scale-[1.05]"
           />
@@ -16,7 +16,7 @@ export default function ProductCard({ product }: { product: IProduct }) {
           <div className="mb-3 flex items-center justify-between gap-3">
             <div className="pro-name">
               <h6 className="mb-2 text-base font-semibold leading-7 text-black">
-                {product.name}
+                {product.title}
               </h6>
               <p className="text-xs font-normal leading-5 text-gray-500">
                 {product.description}
@@ -42,10 +42,10 @@ export default function ProductCard({ product }: { product: IProduct }) {
           </div>
           <div className="flex gap-1">
             <strong className="text-base font-semibold leading-7 text-indigo-600">
-              ${product.price}{' '}
+              ${product.price.current}{' '}
             </strong>
             <p className="flex items-center text-xs font-normal leading-5 text-indigo-200">
-              <del className="text-indigo-200"> ${product.discount}</del>
+              <del className="text-indigo-200"> ${product.price.previous}</del>
             </p>
           </div>
         </div>
