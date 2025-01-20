@@ -1,6 +1,6 @@
 import { Link } from '@remix-run/react';
 import { blogPosts } from '~/data/blogPosts';
-import BlogPostCard from '../../../components/BlogPostCard';
+import BlogPostCard from './BlogPostCard';
 
 export default function HomeBlogSection() {
   return (

@@ -1,10 +1,10 @@
 import { MetaFunction } from '@remix-run/react';
-import BlogPostCard from '~/components/BlogPostCard';
 import { blogPosts } from '~/data/blogPosts';
 import {
   generateMetaDescription,
   generateMetaTitle,
 } from '~/utils/generateMetaHandlers';
+import BlogPostCard from './BlogPostCard';
 
 export const meta: MetaFunction = () => {
   return [
