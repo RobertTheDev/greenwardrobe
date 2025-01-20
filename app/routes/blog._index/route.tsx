@@ -18,7 +18,7 @@ export const meta: MetaFunction = () => {
 
 export default function BlogArticlesPage() {
   return (
-    <div className="py-24">
+    <main className="py-24">
       <div className="mx-auto w-full max-w-7xl px-4 md:px-6 lg:px-8">
         <h2 className="font-manrope mb-8 text-center text-2xl font-bold leading-10 text-black min-[400px]:text-4xl">
           Latest Blog
@@ -29,6 +29,6 @@ export default function BlogArticlesPage() {
           })}
         </div>
       </div>
-    </div>
+    </main>
   );
 }

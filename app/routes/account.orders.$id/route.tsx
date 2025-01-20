@@ -16,8 +16,8 @@ export const meta: MetaFunction = () => {
 
 export default function AccountOrderPage() {
   return (
-    <div>
+    <main>
       <h1>Account Order</h1>
-    </div>
+    </main>
   );
 }

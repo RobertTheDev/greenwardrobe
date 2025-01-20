@@ -35,7 +35,7 @@ export default function ProductPage() {
   }
 
   return (
-    <div className="p-4 font-[sans-serif]">
+    <main className="p-4 font-[sans-serif]">
       <div className="w-full">
         <div className="grid grid-cols-1 items-start gap-8 max-lg:gap-12 max-sm:gap-8 lg:grid-cols-5">
           <ProductImages product={product} />
@@ -48,6 +48,6 @@ export default function ProductPage() {
           </div>
         </div>
       </div>
-    </div>
+    </main>
   );
 }

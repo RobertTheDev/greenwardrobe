@@ -16,8 +16,8 @@ export const meta: MetaFunction = () => {
 
 export default function AccountProfilePage() {
   return (
-    <div>
+    <main>
       <h1>Account Profile</h1>
-    </div>
+    </main>
   );
 }

@@ -17,7 +17,7 @@ export const meta: MetaFunction = () => {
 
 export default function ContactUsPage() {
   return (
-    <section className="block">
+    <main className="block">
       <div className="grid gap-4 bg-gray-900 py-32">
         <h2 className="font-manrope text-center text-4xl font-bold leading-snug text-white">
           CONTACT US
@@ -29,6 +29,6 @@ export default function ContactUsPage() {
         </p>
       </div>
       <ContactForm />
-    </section>
+    </main>
   );
 }

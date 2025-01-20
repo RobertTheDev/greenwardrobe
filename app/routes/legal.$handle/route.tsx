@@ -17,7 +17,7 @@ export const meta: MetaFunction = () => {
 
 export default function ShopLegalPage() {
   return (
-    <section className="relative w-full overflow-hidden py-16 lg:py-28">
+    <main className="relative w-full overflow-hidden py-16 lg:py-28">
       <div className="px-12 xl:px-20">
         <div className="flex w-full flex-col gap-8 md:flex-row">
           <LegalPageMenu />
@@ -287,6 +287,6 @@ export default function ShopLegalPage() {
           </div>
         </div>
       </div>
-    </section>
+    </main>
   );
 }

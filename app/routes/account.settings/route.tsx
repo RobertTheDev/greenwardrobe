@@ -17,9 +17,9 @@ export const meta: MetaFunction = () => {
 
 export default function AccountSettingsPage() {
   return (
-    <div>
+    <main>
       <h1>Account Settings</h1>
       <AccountSettingsForm />
-    </div>
+    </main>
   );
 }

@@ -6,7 +6,7 @@ import productOrders from './productOrders';
 
 export default function SuccessOrder() {
   return (
-    <section className="relative py-24">
+    <main className="relative py-24">
       <div className="lg-6 mx-auto w-full max-w-7xl px-4 md:px-5">
         <OrderMessage />
         <div className="main-box max-w-xl rounded-xl border border-gray-200 pt-6 max-lg:mx-auto lg:max-w-full">
@@ -15,6 +15,6 @@ export default function SuccessOrder() {
           <OrderFooter />
         </div>
       </div>
-    </section>
+    </main>
   );
 }

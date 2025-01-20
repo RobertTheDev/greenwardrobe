@@ -15,9 +15,9 @@ export const meta: MetaFunction = () => {
   ];
 };
 
-export default function FaqComponent() {
+export default function FaqPage() {
   return (
-    <section className="py-24">
+    <main className="py-24">
       <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
         <div className="flex flex-col justify-center gap-12 lg:flex-row lg:justify-between xl:gap-24">
           <div className="w-full lg:w-2/5">
@@ -44,6 +44,6 @@ export default function FaqComponent() {
           </div>
         </div>
       </div>
-    </section>
+    </main>
   );
 }

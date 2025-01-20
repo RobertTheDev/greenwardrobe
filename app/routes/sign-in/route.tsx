@@ -18,7 +18,7 @@ export const meta: MetaFunction = () => {
 
 export default function SignInPage() {
   return (
-    <div className="flex min-h-screen flex-col lg:flex-row">
+    <main className="flex min-h-screen flex-col lg:flex-row">
       <div className="flex items-start justify-center bg-gray-50 p-8 lg:w-1/2 lg:p-16 dark:bg-gray-900">
         <AuthForm />
       </div>
@@ -29,6 +29,6 @@ export default function SignInPage() {
           src="https://earthwardrobe.com/cdn/shop/products/EA080_LS03_2018.jpg?v=1710794555"
         />
       </div>
-    </div>
+    </main>
   );
 }

@@ -18,7 +18,7 @@ export const meta: MetaFunction = () => {
 
 export default function CollectionsPage() {
   return (
-    <div className="mx-auto mb-14 w-full max-w-7xl px-4 lg:px-8">
+    <main className="mx-auto mb-14 w-full max-w-7xl px-4 lg:px-8">
       <div className="mb-14 flex w-full flex-col items-center justify-between max-lg:gap-6 lg:flex-row">
         <h1 className="font-manrope text-4xl font-medium text-black max-lg:text-center sm:text-5xl sm:leading-snug">
           Browse Our Collections
@@ -31,6 +31,6 @@ export default function CollectionsPage() {
           );
         })}
       </div>
-    </div>
+    </main>
   );
 }

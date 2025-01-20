@@ -18,7 +18,7 @@ export const meta: MetaFunction = () => {
 
 export default function CollectionPage() {
   return (
-    <div className="col-span-12 rounded-xl bg-white md:col-span-8 lg:max-h-screen xl:col-span-9">
+    <main className="col-span-12 rounded-xl bg-white md:col-span-8 lg:max-h-screen xl:col-span-9">
       <div className="mx-auto max-w-[1400px] bg-white p-4 font-[sans-serif]">
         <h2 className="mb-6 text-xl font-extrabold text-gray-800 sm:mb-8 sm:text-3xl">
           Premium Threads
@@ -30,6 +30,6 @@ export default function CollectionPage() {
           })}
         </div>
       </div>
-    </div>
+    </main>
   );
 }

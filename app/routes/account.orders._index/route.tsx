@@ -16,9 +16,9 @@ export const meta: MetaFunction = () => {
 
 export default function AccountOrdersPage() {
   return (
-    <div>
+    <main>
       <h1>Account Orders</h1>
       <Link to="/account/orders/1">Order 1</Link>
-    </div>
+    </main>
   );
 }
