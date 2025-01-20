@@ -4,5 +4,9 @@ export interface IBlogPost {
   title: string;
   description: string;
   date: string;
-  image: string;
+  category: string;
+  image: {
+    src: string;
+    alt: string;
+  };
 }
