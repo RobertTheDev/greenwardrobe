@@ -1,36 +1,30 @@
+import { Link } from '@remix-run/react';
+
 export default function HomeHeroSection() {
   return (
-    <div className="bg-gradient-to-r from-emerald-900 to-green-900 font-[sans-serif]">
-      <div className="relative overflow-hidden">
-        <div className="mx-auto max-w-screen-xl px-4 py-16 sm:px-6 lg:px-8 lg:py-44">
-          <div className="relative z-10 text-center lg:text-left">
-            <h1 className="text-4xl font-extrabold leading-10 tracking-tight text-white sm:text-5xl sm:leading-none md:text-6xl lg:text-7xl">
-              Welcome to
-              <br className="xl:hidden" />
-              <span className="text-emerald-400"> Green Wardrobe</span>
-            </h1>
-            <p className="mt-4 max-w-md text-lg text-white sm:text-xl md:mt-6 md:max-w-3xl">
-              Elevate your culinary experience with our exclusive premium
-              services. Indulge in exquisite flavors and extraordinary moments.
-            </p>
-
-            <div className="mt-12 flex gap-4 max-sm:flex-col sm:justify-center lg:justify-start">
-              <div>
-                <button className="flex w-full items-center justify-center rounded-full bg-emerald-500 px-8 py-3 text-base tracking-wide text-white transition duration-150 ease-in-out hover:bg-emerald-400">
-                  Start Shopping
-                </button>
+    <div className="relative h-screen w-full bg-[url('https://livinglightlyinireland.com/wp-content/uploads/2024/03/globe-hope.jpg?w=1024')] bg-cover bg-center bg-no-repeat">
+      <div className="absolute inset-0 bg-black opacity-45"></div>
+      <section className="relative w-full lg:pt-[84px]">
+        <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
+          <div className="inline-flex w-full flex-col items-start justify-start gap-10 pb-24 pt-8 lg:gap-14 lg:pb-36 lg:pt-20">
+            <div className="flex w-full flex-col items-center justify-start gap-8 lg:items-start lg:gap-10">
+              <div className="flex w-full flex-col items-center justify-start gap-5 lg:items-start">
+                <h2 className="font-manrope w-full text-center text-6xl font-bold leading-normal text-white md:text-7xl md:leading-snug lg:max-w-xl lg:text-start">
+                  Sustainable Clothing For Everyone
+                </h2>
               </div>
             </div>
+            <Link
+              to="/shop"
+              className="mx-auto flex w-full items-center justify-center rounded-full bg-emerald-600 px-5 py-2.5 shadow-[0px_1px_2px_0px_rgba(16,_24,_40,_0.05)] transition-all duration-700 ease-in-out hover:bg-emerald-700 sm:w-fit lg:ml-0"
+            >
+              <span className="px-2 py-px text-base font-semibold leading-relaxed text-white">
+                Shop Now
+              </span>
+            </Link>
           </div>
         </div>
-        <div className="lg:absolute lg:inset-y-0 lg:right-0 lg:w-1/2">
-          <img
-            className="h-56 w-full object-cover sm:h-72 md:h-96 lg:h-full lg:w-full"
-            src="/hero-image.jpg"
-            alt="People showing off our range of clothing"
-          />
-        </div>
-      </div>
+      </section>
     </div>
   );
 }
