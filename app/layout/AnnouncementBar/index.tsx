@@ -1,7 +1,7 @@
 export default function AnnouncementBar() {
   return (
-    <div className="bg-black p-4">
-      <p className="text-center text-sm font-medium text-white">
+    <div className="bg-neutral-950 py-3">
+      <p className="text-center text-sm font-medium text-neutral-50">
         This a portfolio website by{' '}
         <a
           href="https://www.roberthawker.dev"
