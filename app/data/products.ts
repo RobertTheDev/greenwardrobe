@@ -3,43 +3,165 @@ import IProduct from '~/interfaces/Product';
 const products: IProduct[] = [
   {
     id: '1',
-    image:
-      'https://cdn.shopify.com/s/files/1/0251/9855/9279/files/Untitled_design_81.jpg?v=1709909490',
-    name: 'Roadster',
     slug: 'roadster',
-    description: 'Black Solid Round Neck',
-    price: 80,
-    discount: 100,
+    title: 'Women Embroidered A-line Kurta',
+    description:
+      'Women Embroidered Georgette A-line Kurta with Attached Dupatta in a rich maroon shade, featuring intricate embroidery, and a lightweight georgette fabric.',
+    price: {
+      current: 12,
+      previous: 16,
+      currency: 'USD',
+      taxIncluded: true,
+    },
+    productInformation: [
+      {
+        title: 'Product details',
+        content:
+          'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.',
+      },
+      {
+        title: 'Vendor details',
+        content:
+          'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.',
+      },
+      {
+        title: 'Return and exchange policy',
+        content:
+          'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.',
+      },
+    ],
+    colours: ['Blue', 'Green', 'Yellow', 'Orange', 'Purple'],
+    sizes: ['SM', 'MD', 'LG', 'XL', 'XXL'],
+    images: [
+      {
+        id: '1',
+        src: 'https://readymadeui.com/images/fashion-img-1.webp',
+        alt: 'Product',
+      },
+      {
+        id: '2',
+        src: 'https://readymadeui.com/images/fashion-img-2.webp',
+        alt: 'Product2',
+      },
+      {
+        id: '3',
+        src: 'https://readymadeui.com/images/fashion-img-3.webp',
+        alt: 'Product3',
+      },
+      {
+        id: '4',
+        src: 'https://readymadeui.com/images/fashion-img-4.webp',
+        alt: 'Product4',
+      },
+    ],
   },
   {
     id: '2',
-    image:
-      'https://cdn.shopify.com/s/files/1/0251/9855/9279/files/Untitled_design_91.jpg?v=1709910354',
-    name: 'Blue Blazer',
-    slug: 'blue-blazer',
-    description: 'Men’s clothes',
-    price: 120,
-    discount: 149,
+    slug: 'roadster',
+    title: 'Women Embroidered A-line Kurta',
+    description:
+      'Women Embroidered Georgette A-line Kurta with Attached Dupatta in a rich maroon shade, featuring intricate embroidery, and a lightweight georgette fabric.',
+    price: {
+      current: 12,
+      previous: 16,
+      currency: 'USD',
+      taxIncluded: true,
+    },
+    productInformation: [
+      {
+        title: 'Product details',
+        content:
+          'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.',
+      },
+      {
+        title: 'Vendor details',
+        content:
+          'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.',
+      },
+      {
+        title: 'Return and exchange policy',
+        content:
+          'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.',
+      },
+    ],
+    colours: ['Blue', 'Green', 'Yellow', 'Orange', 'Purple'],
+    sizes: ['SM', 'MD', 'LG', 'XL', 'XXL'],
+    images: [
+      {
+        id: '1',
+        src: 'https://readymadeui.com/images/fashion-img-1.webp',
+        alt: 'Product',
+      },
+      {
+        id: '2',
+        src: 'https://readymadeui.com/images/fashion-img-2.webp',
+        alt: 'Product2',
+      },
+      {
+        id: '3',
+        src: 'https://readymadeui.com/images/fashion-img-3.webp',
+        alt: 'Product3',
+      },
+      {
+        id: '4',
+        src: 'https://readymadeui.com/images/fashion-img-4.webp',
+        alt: 'Product4',
+      },
+    ],
   },
   {
     id: '3',
-    image:
-      'https://cdn.shopify.com/s/files/1/0251/9855/9279/files/Untitled_design_92.jpg',
-    name: 'Black Shirt',
-    slug: 'black-shirt',
-    description: 'Shirts',
-    price: 75,
-    discount: 100,
-  },
-  {
-    id: '4',
-    image:
-      'https://cdn.shopify.com/s/files/1/0251/9855/9279/files/Untitled_design_-_2024-03-11T143220.000.jpg?v=1710169942',
-    name: 'Beige T-shirt',
-    slug: 'beige-t-shirt',
-    description: 'Women’s clothes',
-    price: 75,
-    discount: 75,
+    slug: 'roadster',
+    title: 'Women Embroidered A-line Kurta',
+    description:
+      'Women Embroidered Georgette A-line Kurta with Attached Dupatta in a rich maroon shade, featuring intricate embroidery, and a lightweight georgette fabric.',
+    price: {
+      current: 12,
+      previous: 16,
+      currency: 'USD',
+      taxIncluded: true,
+    },
+    productInformation: [
+      {
+        title: 'Product details',
+        content:
+          'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.',
+      },
+      {
+        title: 'Vendor details',
+        content:
+          'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.',
+      },
+      {
+        title: 'Return and exchange policy',
+        content:
+          'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.',
+      },
+    ],
+    colours: ['Blue', 'Green', 'Yellow', 'Orange', 'Purple'],
+    sizes: ['SM', 'MD', 'LG', 'XL', 'XXL'],
+    images: [
+      {
+        id: '1',
+        src: 'https://readymadeui.com/images/fashion-img-1.webp',
+        alt: 'Product',
+      },
+      {
+        id: '2',
+        src: 'https://readymadeui.com/images/fashion-img-2.webp',
+        alt: 'Product2',
+      },
+      {
+        id: '3',
+        src: 'https://readymadeui.com/images/fashion-img-3.webp',
+        alt: 'Product3',
+      },
+      {
+        id: '4',
+        src: 'https://readymadeui.com/images/fashion-img-4.webp',
+        alt: 'Product4',
+      },
+    ],
   },
 ];
 
