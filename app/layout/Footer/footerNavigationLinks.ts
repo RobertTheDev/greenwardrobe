@@ -30,7 +30,7 @@ const footerNavigationLinks = [
     links: [
       {
         title: 'Contact Us',
-        url: '/contact',
+        url: '/contact-us',
       },
       {
         title: 'FAQ',
