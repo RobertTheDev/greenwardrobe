@@ -1,14 +1,14 @@
 import { MetaFunction } from '@remix-run/react';
-import HomeAboutSection from '~/components/HomeAboutSection';
-import HomeBlogSection from '~/components/HomeBlogSection';
-import HomeCollectionsSection from '~/components/HomeCollectionsSection';
-import HomeFeaturedSection from '~/components/HomeFeaturedSection';
-import HomeFeaturesSection from '~/components/HomeFeaturesSection';
-import HomeHeroSection from '~/components/HomeHeroSection';
 import {
   generateMetaDescription,
   generateMetaTitle,
 } from '~/utils/generateMetaHandlers';
+import HomeAboutSection from './HomeAboutSection';
+import HomeBlogSection from './HomeBlogSection';
+import HomeCollectionsSection from './HomeCollectionsSection';
+import HomeFeaturedSection from './HomeFeaturedSection';
+import HomeFeaturesSection from './HomeFeaturesSection';
+import HomeHeroSection from './HomeHeroSection';
 
 export const meta: MetaFunction = () => {
   return [
