@@ -3,7 +3,6 @@ import {
   generateMetaDescription,
   generateMetaTitle,
 } from '~/utils/generateMetaHandlers';
-import LegalPageMenu from './LegalPageMenu';
 
 export const meta: MetaFunction = () => {
   return [
@@ -17,11 +16,10 @@ export const meta: MetaFunction = () => {
 
 export default function ShopLegalPage() {
   return (
-    <main className="relative w-full overflow-hidden py-16 lg:py-28">
+    <main className="relative w-full py-12">
       <div className="px-12 xl:px-20">
         <div className="flex w-full flex-col gap-8 md:flex-row">
-          <LegalPageMenu />
-          <div className="tab-pane w-full max-md:px-4">
+          <div className="w-full max-md:px-4">
             <h2 className="font-manrope mb-5 text-3xl font-bold text-gray-900 lg:text-4xl">
               Terms of Use
             </h2>
