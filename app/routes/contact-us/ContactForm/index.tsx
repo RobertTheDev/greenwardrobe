@@ -1,153 +1,158 @@
-export default function ContactForm() {
-  return (
-    <div className="mx-auto max-w-7xl -translate-y-16 px-4 sm:px-6 lg:px-8">
-      <div className="rounded-3xl bg-white p-7 shadow-[0px_15px_60px_-4px_rgba(16,_24,_40,_0.08)] lg:p-11">
-        <h3 className="font-manrope pb-9 text-center text-3xl font-semibold leading-normal text-gray-900">
-          Send Us Message
-        </h3>
-        <div className="flex flex-col gap-8">
-          <div className="flex flex-col gap-8 md:flex-row">
-            <div className="flex w-full items-start justify-start gap-1">
-              <div className="flex w-full flex-col items-start justify-start gap-1.5">
-                <div className="inline-flex items-center justify-start gap-1">
-                  <span className="text-base font-medium leading-7 text-gray-600">
-                    First Name
-                  </span>
-                  <svg
-                    xmlns="http://www.w3.org/2000/svg"
-                    width="7"
-                    height="7"
-                    viewBox="0 0 7 7"
-                    fill="none"
-                  >
-                    <path
-                      d="M2.55682 6.90909L2.66477 4.51136L0.642045 5.8125L0.0227273 4.73295L2.17045 3.63636L0.0227273 2.53977L0.642045 1.46023L2.66477 2.76136L2.55682 0.363636H3.78977L3.68182 2.76136L5.70455 1.46023L6.32386 2.53977L4.17614 3.63636L6.32386 4.73295L5.70455 5.8125L3.68182 4.51136L3.78977 6.90909H2.55682Z"
-                      fill="#EF4444"
-                    ></path>
-                  </svg>
-                </div>
-                <input
-                  type="text"
-                  className="w-full rounded-lg border border-gray-200 px-5 py-3 text-lg font-normal leading-relaxed text-gray-900 placeholder-gray-400 shadow-[0px_1px_2px_0px_rgba(16,_24,_40,_0.05)] focus:outline-none"
-                  placeholder="First Name"
-                />
-              </div>
-            </div>
-            <div className="flex w-full items-start justify-start gap-1">
-              <div className="flex w-full flex-col items-start justify-start gap-1.5">
-                <div className="inline-flex items-center justify-start gap-1">
-                  <span className="text-base font-medium leading-7 text-gray-600">
-                    Last Name
-                  </span>
-                  <svg
-                    xmlns="http://www.w3.org/2000/svg"
-                    width="7"
-                    height="7"
-                    viewBox="0 0 7 7"
-                    fill="none"
-                  >
-                    <path
-                      d="M2.55682 6.90909L2.66477 4.51136L0.642045 5.8125L0.0227273 4.73295L2.17045 3.63636L0.0227273 2.53977L0.642045 1.46023L2.66477 2.76136L2.55682 0.363636H3.78977L3.68182 2.76136L5.70455 1.46023L6.32386 2.53977L4.17614 3.63636L6.32386 4.73295L5.70455 5.8125L3.68182 4.51136L3.78977 6.90909H2.55682Z"
-                      fill="#EF4444"
-                    ></path>
-                  </svg>
-                </div>
-                <input
-                  type="text"
-                  className="w-full rounded-lg border border-gray-200 px-5 py-3 text-lg font-normal leading-relaxed text-gray-900 placeholder-gray-400 shadow-[0px_1px_2px_0px_rgba(16,_24,_40,_0.05)] focus:outline-none"
-                  placeholder="Last Name"
-                />
-              </div>
-            </div>
-          </div>
-          <div className="flex flex-col gap-8 md:flex-row">
-            <div className="flex w-full items-start justify-start gap-1">
-              <div className="flex w-full flex-col items-start justify-start gap-1.5">
-                <div className="inline-flex items-center justify-start gap-1">
-                  <span className="text-base font-medium leading-7 text-gray-600">
-                    Email
-                  </span>
-                  <svg
-                    xmlns="http://www.w3.org/2000/svg"
-                    width="7"
-                    height="7"
-                    viewBox="0 0 7 7"
-                    fill="none"
-                  >
-                    <path
-                      d="M2.55682 6.90909L2.66477 4.51136L0.642045 5.8125L0.0227273 4.73295L2.17045 3.63636L0.0227273 2.53977L0.642045 1.46023L2.66477 2.76136L2.55682 0.363636H3.78977L3.68182 2.76136L5.70455 1.46023L6.32386 2.53977L4.17614 3.63636L6.32386 4.73295L5.70455 5.8125L3.68182 4.51136L3.78977 6.90909H2.55682Z"
-                      fill="#EF4444"
-                    ></path>
-                  </svg>
-                </div>
-                <input
-                  type="text"
-                  className="w-full rounded-lg border border-gray-200 px-5 py-3 text-lg font-normal leading-relaxed text-gray-900 placeholder-gray-400 shadow-[0px_1px_2px_0px_rgba(16,_24,_40,_0.05)] focus:outline-none"
-                  placeholder="Email"
-                />
-              </div>
-            </div>
-            <div className="flex w-full items-start justify-start gap-1">
-              <div className="flex w-full flex-col items-start justify-start gap-1.5">
-                <div className="inline-flex items-center justify-start gap-1">
-                  <span className="text-base font-medium leading-7 text-gray-600">
-                    Phone Number
-                  </span>
-                  <svg
-                    xmlns="http://www.w3.org/2000/svg"
-                    width="7"
-                    height="7"
-                    viewBox="0 0 7 7"
-                    fill="none"
-                  >
-                    <path
-                      d="M2.55682 6.90909L2.66477 4.51136L0.642045 5.8125L0.0227273 4.73295L2.17045 3.63636L0.0227273 2.53977L0.642045 1.46023L2.66477 2.76136L2.55682 0.363636H3.78977L3.68182 2.76136L5.70455 1.46023L6.32386 2.53977L4.17614 3.63636L6.32386 4.73295L5.70455 5.8125L3.68182 4.51136L3.78977 6.90909H2.55682Z"
-                      fill="#EF4444"
-                    ></path>
-                  </svg>
-                </div>
-                <input
-                  type="text"
-                  className="w-full rounded-lg border border-gray-200 px-5 py-3 text-lg font-normal leading-relaxed text-gray-900 placeholder-gray-400 shadow-[0px_1px_2px_0px_rgba(16,_24,_40,_0.05)] focus:outline-none"
-                  placeholder="Phone"
-                />
-              </div>
-            </div>
-          </div>
-          <div className="flex w-full items-start justify-start gap-1">
-            <div className="flex w-full flex-col items-start justify-start gap-1.5">
-              <div className="inline-flex items-center justify-start gap-1">
-                <span className="text-base font-medium leading-7 text-gray-600">
-                  Description
-                </span>
-                <svg
-                  xmlns="http://www.w3.org/2000/svg"
-                  width="7"
-                  height="7"
-                  viewBox="0 0 7 7"
-                  fill="none"
-                >
-                  <path
-                    d="M2.55682 6.90909L2.66477 4.51136L0.642045 5.8125L0.0227273 4.73295L2.17045 3.63636L0.0227273 2.53977L0.642045 1.46023L2.66477 2.76136L2.55682 0.363636H3.78977L3.68182 2.76136L5.70455 1.46023L6.32386 2.53977L4.17614 3.63636L6.32386 4.73295L5.70455 5.8125L3.68182 4.51136L3.78977 6.90909H2.55682Z"
-                    fill="#EF4444"
-                  ></path>
-                </svg>
-              </div>
-              <textarea
-                rows={4}
-                className="w-full resize-none rounded-lg border border-gray-200 px-4 py-2.5 text-lg font-normal leading-8 text-gray-900 placeholder-gray-400 shadow-[0px_1px_2px_0px_rgba(16,_24,_40,_0.05)] focus:outline-none"
-                placeholder="Write Message . . ."
-              />
-            </div>
-          </div>
+import { zodResolver } from '@hookform/resolvers/zod';
+import { useState } from 'react';
+import { useForm } from 'react-hook-form';
+import { z } from 'zod';
 
-          <button className="rounded-xl bg-gray-900 px-5 py-2.5 shadow-[0px_1px_2px_0px_rgba(16,_24,_40,_0.05)] transition-all duration-700 ease-in-out hover:bg-gray-700">
-            <span className="text-center text-base font-semibold leading-7 text-white">
-              Submit
-            </span>
-          </button>
-        </div>
+// Define Zod schema
+const schema = z.object({
+  firstName: z.string().min(2, 'First name must be at least 2 characters long'),
+  lastName: z.string().min(2, 'Last name must be at least 2 characters long'),
+  email: z.string().email('Invalid email address'),
+  message: z.string().min(10, 'Message must be at least 10 characters long'),
+});
+
+export default function ContactForm() {
+  const [isSubmitting, setIsSubmitting] = useState(false);
+
+  const {
+    register,
+    handleSubmit,
+    formState: { errors, isSubmitting: formLoading },
+  } = useForm<FormData>({
+    resolver: zodResolver(schema),
+  });
+
+  interface FormData {
+    firstName: string;
+    lastName: string;
+    email: string;
+    message: string;
+  }
+
+  const onSubmit = async (data: FormData) => {
+    setIsSubmitting(true);
+    try {
+      // Simulate a network request
+      await new Promise((resolve) => setTimeout(resolve, 2000));
+      alert(JSON.stringify(data, null, 2));
+    } catch (error) {
+      console.error('Submission failed', error);
+    } finally {
+      setIsSubmitting(false);
+    }
+  };
+
+  return (
+    <form className="mt-8 space-y-6" onSubmit={handleSubmit(onSubmit)}>
+      {/* First Name */}
+      <div>
+        <label
+          htmlFor="firstName"
+          className="block text-sm font-medium text-gray-700"
+        >
+          First Name
+        </label>
+        <input
+          type="text"
+          {...register('firstName')}
+          placeholder="Enter your first name"
+          className={`mt-1 w-full rounded-lg border px-4 py-3 shadow-sm ${
+            errors.firstName
+              ? 'border-red-500 focus:border-red-500'
+              : 'border-gray-300 focus:border-gray-500'
+          }`}
+        />
+        {errors.firstName && (
+          <span className="text-sm text-red-500">
+            {errors.firstName?.message as string}
+          </span>
+        )}
       </div>
-    </div>
+      {/* Last Name */}
+      <div>
+        <label
+          htmlFor="lastName"
+          className="block text-sm font-medium text-gray-700"
+        >
+          Last Name
+        </label>
+        <input
+          type="text"
+          {...register('lastName')}
+          placeholder="Enter your last name"
+          className={`mt-1 w-full rounded-lg border px-4 py-3 shadow-sm ${
+            errors.lastName
+              ? 'border-red-500 focus:border-red-500'
+              : 'border-gray-300 focus:border-gray-500'
+          }`}
+        />
+        {errors.lastName && (
+          <span className="text-sm text-red-500">
+            {errors.lastName?.message as string}
+          </span>
+        )}
+      </div>
+      {/* Email */}
+      <div>
+        <label
+          htmlFor="email"
+          className="block text-sm font-medium text-gray-700"
+        >
+          Email Address
+        </label>
+        <input
+          type="email"
+          {...register('email')}
+          placeholder="Enter your email"
+          className={`mt-1 w-full rounded-lg border px-4 py-3 shadow-sm ${
+            errors.email
+              ? 'border-red-500 focus:border-red-500'
+              : 'border-gray-300 focus:border-gray-500'
+          }`}
+        />
+        {errors.email && (
+          <span className="text-sm text-red-500">
+            {errors.email?.message as string}
+          </span>
+        )}
+      </div>
+
+      {/* Message */}
+      <div>
+        <label
+          htmlFor="message"
+          className="block text-sm font-medium text-gray-700"
+        >
+          Message
+        </label>
+        <textarea
+          rows={5}
+          {...register('message')}
+          placeholder="Write your message here..."
+          className={`mt-1 w-full rounded-lg border px-4 py-3 shadow-sm ${
+            errors.message
+              ? 'border-red-500 focus:border-red-500'
+              : 'border-gray-300 focus:border-gray-500'
+          }`}
+        ></textarea>
+        {errors.message && (
+          <span className="text-sm text-red-500">
+            {errors.message?.message as string}
+          </span>
+        )}
+      </div>
+      {/* Submit Button */}
+      <button
+        type="submit"
+        disabled={formLoading || isSubmitting}
+        className={`w-full rounded-lg px-6 py-3 text-lg font-medium text-white shadow-sm transition ${
+          formLoading || isSubmitting
+            ? 'cursor-not-allowed bg-gray-500'
+            : 'bg-gray-800 hover:bg-gray-700'
+        }`}
+      >
+        {formLoading || isSubmitting ? 'Submitting...' : 'Submit'}
+      </button>
+    </form>
   );
 }
