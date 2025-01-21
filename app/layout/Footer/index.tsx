@@ -6,24 +6,7 @@ export default function Footer() {
   return (
     <footer className="w-full border-t">
       <div className="mx-auto max-w-7xl">
-        <div className="grid grid-cols-2 gap-3 gap-y-8 py-10 max-sm:mx-auto max-sm:max-w-sm sm:grid-cols-4 md:gap-8 lg:grid-cols-6">
-          <div className="col-span-full mb-10 lg:col-span-2 lg:mb-0">
-            <a
-              href="https://pagedone.io/"
-              className="flex justify-center lg:justify-start"
-            >
-              <img
-                src="/desktop-logo.jpg"
-                alt="Pagedone"
-                className="h-9 w-auto"
-              />
-            </a>
-            <p className="mt-6 text-center text-sm text-gray-500 lg:max-w-xs lg:text-left">
-              Trusted in more than 100 countries & 5 million customers. Have any
-              query ?
-            </p>
-          </div>
-
+        <div className="grid grid-cols-2 gap-3 gap-y-8 py-10 max-sm:mx-auto max-sm:max-w-sm sm:grid-cols-4 md:gap-8 lg:grid-cols-4">
           {footerNavigationLinks.map((props) => {
             return <FooterNavigationMenu key={props.title} props={props} />;
           })}
