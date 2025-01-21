@@ -6,17 +6,13 @@ export default function Header() {
   const signedIn = true;
 
   return (
-    <header className="sticky top-0 z-[99] flex border-b bg-white px-4 py-2 font-[sans-serif] tracking-wide">
+    <header className="sticky top-0 z-[99] flex border-b bg-white px-4 py-3 font-[sans-serif] tracking-wide">
       <div className="mx-auto flex w-full max-w-7xl">
-        <div className="flex w-full flex-wrap items-center gap-4 lg:gap-y-2">
+        <div className="flex w-full flex-wrap items-center lg:gap-y-2">
           <Link to="/">
+            <img src="/logo.svg" alt="logo" className="w-9 max-sm:hidden" />
             <img
-              src="/desktop-logo.jpg"
-              alt="logo"
-              className="w-56 max-sm:hidden"
-            />
-            <img
-              src="/mobile-logo.jpg"
+              src="/logo.svg"
               alt="logo"
               className="hidden w-11 rounded-full max-sm:block"
             />
