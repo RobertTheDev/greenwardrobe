@@ -9,7 +9,7 @@ export default function HomeHeroSection() {
           <div className="inline-flex w-full flex-col items-start justify-start gap-10 pb-24 pt-8 lg:gap-14 lg:pb-36 lg:pt-20">
             <div className="flex w-full flex-col items-center justify-start gap-8 lg:items-start lg:gap-10">
               <div className="flex w-full flex-col items-center justify-start gap-5 lg:items-start">
-                <h2 className="font-manrope w-full text-center text-6xl font-bold leading-normal text-white md:text-7xl md:leading-snug lg:max-w-xl lg:text-start">
+                <h2 className="font-manrope w-full text-center text-5xl font-bold leading-normal text-white md:text-7xl md:leading-snug lg:max-w-xl lg:text-start">
                   Sustainable Clothing For Everyone
                 </h2>
               </div>

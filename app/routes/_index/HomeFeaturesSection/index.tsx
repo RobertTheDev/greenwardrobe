@@ -2,7 +2,7 @@ import features from './features';
 
 export default function HomeFeaturesSection() {
   return (
-    <section className="py-24">
+    <section className="py-8">
       <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
         <div className="mb-14 text-center">
           <h2 className="py-5 text-center text-4xl font-bold text-gray-900">
@@ -18,15 +18,15 @@ export default function HomeFeaturesSection() {
             return (
               <div
                 key={feature.id}
-                className="group relative w-full rounded-2xl bg-gray-100 p-4 transition-all duration-500 hover:bg-indigo-600 max-md:mx-auto max-md:max-w-md md:h-64 md:w-2/5 xl:w-1/4 xl:p-7"
+                className="relative flex w-full flex-col items-center rounded-2xl bg-gray-100 p-4 max-md:mx-auto max-md:max-w-md md:h-64 md:w-2/5 xl:w-1/4 xl:p-7"
               >
                 <div className="mb-5 flex h-14 w-14 items-center justify-center rounded-full bg-white">
                   {feature.icon}
                 </div>
-                <h4 className="mb-3 text-xl font-semibold capitalize text-gray-900 transition-all duration-500 group-hover:text-white">
+                <h4 className="mb-3 text-xl font-semibold capitalize text-gray-900">
                   {feature.title}
                 </h4>
-                <p className="text-sm font-normal leading-5 text-gray-500 transition-all duration-500 group-hover:text-white">
+                <p className="text-center text-sm font-normal text-gray-500">
                   {feature.description}
                 </p>
               </div>

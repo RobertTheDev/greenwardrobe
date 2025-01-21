@@ -22,7 +22,7 @@ export const meta: MetaFunction = () => {
 
 export default function Home() {
   return (
-    <main className="flex w-full flex-1 flex-col">
+    <main className="flex w-full flex-1 flex-col pb-12">
       <HomeHeroSection />
       <HomeFeaturesSection />
       <HomeCollectionsSection />

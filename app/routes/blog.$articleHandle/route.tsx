@@ -29,8 +29,8 @@ export default function BlogArticlePage() {
   }
 
   return (
-    <main>
-      <section className="relative pt-14">
+    <main className="py-8">
+      <section className="relative">
         <div className="mx-auto w-full max-w-xl px-4 md:max-w-3xl md:px-2 lg:max-w-5xl">
           <h1 className="font-manrope mb-7 text-4xl font-semibold leading-snug text-black sm:text-5xl">
             {blogPost.title}

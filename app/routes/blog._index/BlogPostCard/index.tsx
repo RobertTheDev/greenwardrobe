@@ -8,7 +8,7 @@ export default function BlogPostCard({ props }: { props: IBlogPost }) {
         <img
           src={`/blog-posts/${props.image.src}`}
           alt={props.image.alt}
-          className="h-auto w-full rounded-2xl object-cover"
+          className="aspect-video w-full rounded-2xl object-cover shadow-md"
         />
         <div className="block">
           <p className="mb-2.5 text-base font-medium text-gray-500">

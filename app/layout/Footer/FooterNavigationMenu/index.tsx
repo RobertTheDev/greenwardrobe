@@ -6,7 +6,7 @@ export default function FooterNavigationMenu({
   props: { title: string; links: { title: string; url: string }[] };
 }) {
   return (
-    <div className="text-left lg:mx-auto">
+    <div className="ml-8 text-left lg:mx-auto">
       <h4 className="mb-7 text-base font-semibold text-neutral-900">
         {props.title}
       </h4>

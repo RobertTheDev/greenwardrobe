@@ -6,7 +6,7 @@ export default function Header() {
   const signedIn = true;
 
   return (
-    <header className="sticky top-0 z-[99] flex border-b bg-white py-4 font-[sans-serif] tracking-wide">
+    <header className="sticky top-0 z-[99] flex border-b bg-white px-4 py-2 font-[sans-serif] tracking-wide">
       <div className="mx-auto flex w-full max-w-7xl">
         <div className="flex w-full flex-wrap items-center gap-4 lg:gap-y-2">
           <Link to="/">
@@ -56,7 +56,7 @@ export default function Header() {
                 <LuSearch size={20} />
               </button>
             </form>
-            <div className="flex items-center space-x-4 sm:space-x-6">
+            <div className="flex items-center space-x-6">
               <button id="toggleOpen" className="lg:hidden">
                 <LuSearch size={28} />
               </button>

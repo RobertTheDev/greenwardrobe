@@ -2,7 +2,7 @@ import { Link } from '@remix-run/react';
 
 export default function HomeAboutSection() {
   return (
-    <section className="relative bg-neutral-100 py-24">
+    <section className="relative mt-12">
       <div className="mx-auto w-full max-w-7xl px-4 md:px-5 lg:px-5">
         <div className="grid w-full grid-cols-1 items-center justify-start gap-8 lg:grid-cols-2">
           <div className="inline-flex w-full flex-col items-center justify-start gap-10 lg:items-start">
@@ -25,7 +25,7 @@ export default function HomeAboutSection() {
             </Link>
           </div>
           <img
-            className="mx-auto h-full rounded-3xl object-cover lg:mx-0"
+            className="aspect-square w-full rounded-3xl object-cover lg:mx-0"
             src="https://earthwardrobe.com/cdn/shop/files/ewhero2.jpg?v=1709751107&width=1280"
             alt=""
           />
