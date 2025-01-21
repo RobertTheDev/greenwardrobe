@@ -36,10 +36,6 @@ const footerNavigationLinks = [
         title: 'FAQ',
         url: '/faq',
       },
-      {
-        title: 'Request Refund',
-        url: '/request-refund',
-      },
     ],
   },
   {
